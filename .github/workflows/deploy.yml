@@ -1,4 +1,4 @@
-name: Deploy Frontend
+name: Deploy Backend
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build image
-        run: docker build -t raulignacio/front-eval2:latest .
+        run: docker build -t raulignacio/back-eval2:latest .
 
       - name: Push image
-        run: docker push raulignacio/front-eval2:latest
+        run: docker push raulignacio/back-eval2:latest
