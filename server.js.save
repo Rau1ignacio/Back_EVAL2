@@ -143,7 +143,7 @@ app.use((err, req, res, next) => {
 });
 
 // Iniciar el servidor
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
     console.log(`Servidor backend corriendo en el puerto ${PORT}`);
     console.log(`API disponible en: http://localhost:${PORT}`);
 });
